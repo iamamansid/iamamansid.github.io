@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aman Siddiqui — Backend Software Engineer. Java, Spring Boot, Microservices. 3 years designing and scaling distributed systems.">
+  <title>Aman Siddiqui — Backend Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo" aria-label="Aman Siddiqui — home">AS<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Aman Siddiqui</h1>
+        <p class="hero-tagline reveal">Backend Software Engineer — <span class="accent">Java, Spring Boot, Microservices</span></p>
+        <p class="hero-summary reveal">
+          3 years of experience designing and scaling distributed systems.
+          Currently Software Engineer (Backend) at MetLife, Noida.
+          Pursuing M.Tech in AI &amp; ML at BITS Pilani.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">AZ-204</span>
+            <span class="stat-label">Azure Certified</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">500GB+</span>
+            <span class="stat-label">Data Processed / Day</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow reveal">About</p>
+        <h2 class="section-title reveal">Engineer who ships, scales, and simplifies</h2>
+        <p class="about-text reveal">
+          Backend Software Engineer with 3 years of experience designing and scaling distributed
+          systems and microservices in Java and Spring Boot. Track record of shipping high-throughput
+          APIs, cutting data-access latency with caching, and leading zero-downtime production
+          migrations. Strong foundation in distributed systems, cloud-native architecture
+          (Azure/AWS), and DevOps.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="section-eyebrow reveal">Experience</p>
+        <h2 class="section-title reveal">Where I've worked</h2>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3>Software Engineer (Backend)</h3>
+                <span class="timeline-org">MetLife — Noida</span>
+                <span class="timeline-date">Oct 2025 — Present</span>
+              </div>
+              <ul>
+                <li>Design and ship high-performance REST APIs in Java/Spring Boot powering customer channels including conversational IVR and mobile apps.</li>
+                <li>Introduced MongoDB-backed caching on hot read paths, cutting repeated DB calls.</li>
+                <li>Built a Python data pipeline ingesting vulnerability telemetry from Prisma Cloud and AppDynamics, automating reporting.</li>
+                <li>Led production migration of email/fax/print delivery systems to Quadient APIs with zero disruption to live customer communications.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3>Software Developer</h3>
+                <span class="timeline-org">Deloitte — Gurugram</span>
+                <span class="timeline-date">Jul 2023 — Oct 2025</span>
+              </div>
+              <ul>
+                <li>Built a GenAI-powered tool on Azure OpenAI that auto-generates JUnit test cases, improving test-authoring efficiency by 200% (Applause Award + client recognition).</li>
+                <li>Migrated legacy JBoss applications and upgraded services from Java 11 to 17 with minimal defects.</li>
+                <li>Engineered Java services integrating Azure Queue and Blob Storage, reliably processing 500+ GB of data daily.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow reveal">Projects</p>
+        <h2 class="section-title reveal">Things I've built</h2>
+
+        <div class="projects-grid">
+          <!-- URL Shortener -->
+          <article class="project-card project-featured reveal">
+            <div class="project-top">
+              <h3>URL Shortener</h3>
+              <span class="live-badge"><span class="live-pulse"></span>Live</span>
+            </div>
+            <p class="project-desc">
+              Production-style URL shortener: REST API with short-code generation, Redis caching on
+              the hot redirect path, asynchronous click analytics over Kafka (Redpanda), per-IP
+              rate limiting, Flyway migrations, 49/49 tests passing, and a Docker Compose local
+              setup — deployed live on Render.
+            </p>
+            <div class="tech-tags">
+              <span>Java 17</span><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>Kafka</span>
+            </div>
+            <div class="project-links">
+              <a href="https://url-shortener-fjdk.onrender.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="https://github.com/iamamansid/url-shortener" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code</a>
+            </div>
+          </article>
+
+          <!-- Document AI Recognition -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Document AI Recognition</h3>
+            </div>
+            <p class="project-desc">
+              Full-stack document recognition platform: Spring Boot backend, React frontend, Azure
+              AI Services OCR for data extraction; containerized and deployed on AWS Fargate with
+              scalable upload and processing infrastructure.
+            </p>
+            <div class="tech-tags">
+              <span>Spring Boot</span><span>React</span><span>Azure AI OCR</span><span>AWS Fargate</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/iamamansid/spring-ai-backend" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code</a>
+            </div>
+          </article>
+
+          <!-- doc-ocr-ui -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>doc-ocr-ui</h3>
+            </div>
+            <p class="project-desc">
+              ReactJS UI to read document text.
+            </p>
+            <div class="tech-tags">
+              <span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/iamamansid/doc-ocr-ui" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">My toolbox</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <div class="tech-tags">
+              <span>Java (8/11/17)</span><span>Python</span><span>Groovy</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Frameworks</h3>
+            <div class="tech-tags">
+              <span>Spring Boot</span><span>Spring Data JPA / Hibernate</span><span>REST APIs</span><span>Microservices</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Databases</h3>
+            <div class="tech-tags">
+              <span>PostgreSQL</span><span>MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Cloud &amp; Messaging</h3>
+            <div class="tech-tags">
+              <span>Microsoft Azure (AZ-204)</span><span>AWS (S3, EC2, Fargate)</span><span>Kafka</span><span>Redis</span><span>Docker</span><span>Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Tools</h3>
+            <div class="tech-tags">
+              <span>Git</span><span>Jenkins</span><span>Gradle</span><span>Maven</span><span>CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Also familiar</h3>
+            <div class="tech-tags">
+              <span>React.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section-eyebrow reveal">Education</p>
+        <h2 class="section-title reveal">Learning never stops</h2>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <h3>M.Tech — Artificial Intelligence &amp; Machine Learning</h3>
+            <p class="edu-org">BITS Pilani (WILP)</p>
+            <p class="edu-date">2026 — 2028 · Pursuing</p>
+          </article>
+          <article class="edu-card reveal">
+            <h3>B.Tech — Mechanical Engineering</h3>
+            <p class="edu-org">SVNIT Surat</p>
+            <p class="edu-date">2019 — 2023</p>
+          </article>
+          <article class="edu-card reveal edu-cert">
+            <h3>Microsoft Certified: Azure Developer Associate</h3>
+            <p class="edu-org">AZ-204</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-inner">
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's connect</h2>
+        <p class="contact-text reveal">I'm always up for a conversation about backend systems, distributed design, or new opportunities.</p>
+        <div class="contact-links reveal">
+          <a href="mailto:aman.siddiqui114@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://github.com/iamamansid" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Aman Siddiqui. Built with plain HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
